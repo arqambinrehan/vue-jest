@@ -1,12 +1,15 @@
-import { shallowMount } from '@vue/test-utils'
+import { shallow } from 'vue-test-utils'
 import App from '../src/App'
 
-describe('App.test.js', () => {
+describe('App.test.ts', () => {
   let cmp
 
   beforeEach(() => {
-    cmp = shallowMount(App)
-    cmp.setData({ messages: ['Cat'] });
+    cmp = shallow(App, {
+      data: {
+        messages: ['Cat']
+      }
+    })
   })
 
   it('equals messages to ["Cat"]', () => {

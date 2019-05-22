@@ -11,7 +11,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "vue": "^2.5.18"
+    "@types/jest": "^24.0.13",
+    "vue": "^2.5.18",
+    "vue-test-utils": "^1.0.0-beta.11"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.24",
